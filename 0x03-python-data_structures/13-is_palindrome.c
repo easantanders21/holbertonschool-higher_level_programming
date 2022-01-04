@@ -28,8 +28,12 @@ int is_palindrome(listint_t **head)
 	while (k <= i / 2)
 	{
 		if (array[k] != array[i - 1 - k])
+		{
+			free(array);
 			return (0);
+		}
 		k++;
 	}
+	free(array);
 	return (1);
 }
