@@ -3,5 +3,5 @@
 
 
 def is_same_class(obj, a_class):
-    """object is instance of a_class?"""
-    return(isinstance(obj, a_class))
+    """object is exactly an instance of a_class?"""
+    return type(obj) is a_class
