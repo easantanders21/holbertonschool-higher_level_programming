@@ -3,7 +3,7 @@
 
 
 def pascal_triangle(n):
-        """ This module contains a triangle pascal """
+        """ This module contains a triangle pascal"""
 
         list = []
         if n <= 0:
