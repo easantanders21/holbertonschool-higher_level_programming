@@ -3,7 +3,7 @@ const request = require('request');
 const args = process.argv;
 const url = args[2];
 request(url, function (error, response, body) {
-  if (error) {
+  if (response.statusCode !== 200) {
     console.log(error);
   } else {
     let newlist = [];
