@@ -7,8 +7,8 @@ from sys import argv
 if __name__ == "__main__":
     """ main """
     data = urllib.parse.urlencode({'email': argv[2]})
-    data = data.encode('ascii')
+    data = data.encode('utf-8')
     with urllib.request.urlopen(argv[1], data) as response:
         html = response.read()
-    html = html.decode('ascii')
+    html = html.decode('utf-8')
     print(html)
