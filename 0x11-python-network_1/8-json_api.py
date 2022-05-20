@@ -12,7 +12,7 @@ if __name__ == "__main__":
     else:
         res = requests.post(url, data=values)
     try:
-        user = response.json()
+        user = res.json()
         if len(user) < 1:
             print("No result")
         else:
