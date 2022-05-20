@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """ Script that uses a REST API """
 import requests
-from sys import argv
 
 
 if __name__ == "__main__":
